@@ -1,3 +1,4 @@
+const boxEl = document.querySelector("div.container");
 //scrivi un programma che stampi in console numeri da 1 a 100
 for ( let i=1; i<=100; i++) {
   //per i multipli sia di 3 che di 5 stampa FizzBuzz
@@ -17,4 +18,10 @@ for ( let i=1; i<=100; i++) {
   } else {
     console.log(i);
   }
+
+  const div = document.createElement("div");
+  div.append(`${i}`);
+  boxEl.append(div);
+
 }
+
